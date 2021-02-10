@@ -3,11 +3,11 @@ phases:
   pre_build:
     commands:
       - echo Restore started on `date`
-      - dotnet restore WebApplicationSample/WebApplicationSample.csproj
+      - dotnet restore Earnventory.API/Earnventory.API.csproj
   build:
     commands:
       - echo Build started on `date`
-      - dotnet publish -c release -o ./build_output WebApplicationSample/WebApplicationSample.csproj
+      - dotnet publish -c release -o ./build_output Earnventory.API/Earnventory.API.csproj
 artifacts:
   files:
     - ./**/*
